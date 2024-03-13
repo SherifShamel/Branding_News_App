@@ -13,6 +13,7 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -27,16 +28,14 @@ flutter:
 
   assets:
     - assets/img/
-    - assets/fonts/Exo-Bold.ttf
-    - assets/fonts/Exo-Medium.ttf
-    - assets/fonts/Exo-Regular.ttf
-    - assets/fonts/Exo-SemiBold.ttf
     - pubspec.yaml
+    - assets/
+    - assets/fonts/
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
+  fonts:
+   - family: Exo
+     fonts:
+       - asset: assets/fonts/Exo-Bold.ttf
+       - asset: assets/fonts/Exo-SemiBold.ttf
+       - asset: assets/fonts/Exo-Regular.ttf
+       - asset: assets/fonts/Exo-Medium.ttf
