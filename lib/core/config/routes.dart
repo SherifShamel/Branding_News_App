@@ -19,10 +19,14 @@ class Routes {
         );
       case PagesRouteName.settingsView:
         return MaterialPageRoute(
-            builder: (context) => const SettingsView(), settings: settings);
+          builder: (context) => const SettingsView(),
+          settings: settings,
+        );
       default:
         return MaterialPageRoute(
-            builder: (context) => const SplashView(), settings: settings);
+          builder: (context) => const SplashView(),
+          settings: settings,
+        );
     }
   }
 }

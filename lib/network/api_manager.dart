@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:brand_news_app/core/config/constants.dart';
+import 'package:brand_news_app/models/ArticlesDataModel.dart';
 import 'package:brand_news_app/models/source_model.dart';
 import 'package:http/http.dart' as http;
 
@@ -24,6 +25,23 @@ class ApiManager {
       return sourcesDataList;
     } else {
       throw Exception('Failed to reload Data');
+    }
+  }
+
+  static Future<List<Articles>> fetchDataArticles(String sourceId) async {
+    Map<String, dynamic> queryParams = {
+      "apiKey": Constants.apiKey,
+      "sources": sourceId,
+    };
+    var url = Uri.https(Constants.baseURL, "/v2/everything", queryParams);
+    final response = await http.get(url);
+    if (response.statusCode == 200) {
+      var data = jsonDecode(response.body);
+
+      ArticlesDataModel articlesDataModel = ArticlesDataModel.fromJson(data);
+      return articlesDataModel.articles ?? [];
+    } else{
+      throw Exception("Something failed with fetching");
     }
   }
 }

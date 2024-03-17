@@ -59,6 +59,7 @@ class _HomeViewState extends State<HomeView> {
     return CustomBackgroundWidget(
       child: Scaffold(
         appBar: AppBar(
+          elevation: 0,
           title: Text(
             selectedCategory == null ? "News App" : selectedCategory!.title,
             style: Constants.theme.textTheme.titleLarge,
@@ -110,7 +111,6 @@ class _HomeViewState extends State<HomeView> {
 
   void onCategoryClicked(CategoryModel categoryModel) {
     selectedCategory = categoryModel;
-    print(categoryModel.id);
     setState(() {});
   }
 
