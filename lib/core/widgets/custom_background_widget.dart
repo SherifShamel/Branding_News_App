@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomBackgroundWidget extends StatelessWidget {
   final Widget? child;
+
   const CustomBackgroundWidget({super.key, this.child});
 
   @override

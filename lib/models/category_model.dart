@@ -12,5 +12,4 @@ class CategoryModel {
     required this.image,
     required this.backgroundColor,
   });
-
 }

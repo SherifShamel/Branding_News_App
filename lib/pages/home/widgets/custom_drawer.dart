@@ -54,8 +54,7 @@ class CustomDrawer extends StatelessWidget {
           ),
           InkWell(
             onTap: () {
-              navigatorKey.currentState!
-                  .pushNamed(PagesRouteName.settingsView);
+              navigatorKey.currentState!.pushNamed(PagesRouteName.settingsView);
             },
             child: Padding(
               padding: const EdgeInsets.only(

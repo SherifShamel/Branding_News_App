@@ -56,7 +56,6 @@ class Articles {
     urlToImage = json['urlToImage'];
     publishedAt = json['publishedAt'];
   }
-
 }
 
 /// id : "wired"

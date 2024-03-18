@@ -40,7 +40,7 @@ class ApiManager {
 
       ArticlesDataModel articlesDataModel = ArticlesDataModel.fromJson(data);
       return articlesDataModel.articles ?? [];
-    } else{
+    } else {
       throw Exception("Something failed with fetching");
     }
   }

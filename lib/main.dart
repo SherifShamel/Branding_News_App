@@ -3,8 +3,8 @@ import 'package:brand_news_app/core/config/pages_route_name.dart';
 import 'package:brand_news_app/core/config/routes.dart';
 import 'package:flutter/material.dart';
 
-
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
 void main() {
   runApp(const MyApp());
 }

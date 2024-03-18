@@ -66,6 +66,7 @@ class ArticleItemWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 2),
             child: Text(
+              // TimeAgo.timeAgoSinceDate(article.publishedAt as String),
               article.publishedAt ?? "",
               textAlign: TextAlign.end,
               style: Constants.theme.textTheme.bodySmall?.copyWith(
